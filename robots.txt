@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alzaay3322-sudo.github.io/mawaqit-app/sitemap.xml

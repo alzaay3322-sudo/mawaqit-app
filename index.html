@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مواقيت الصلاة - تحميل التطبيق</title>
+<meta name="description" content="تطبيق مواقيت الصلاة لويندوز: مواقيت دقيقة لمدن العالم، عداد للأذان، وأذكار يومية.">
+<style>
+  :root {
+    --bg: #0c1220; --card: #141c2e; --line: #222d44;
+    --text: #e9edf5; --muted: #8e9bb3; --gold: #d4b06a; --gold-dark: #b8924d;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif; line-height: 1.7;
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--gold); font-size: 1.1rem; }
+  .brand svg { width: 34px; height: 34px; }
+
+  .hero { text-align: center; padding: 80px 0 60px; }
+  .hero-icon { width: 120px; height: 120px; margin: 0 auto 24px; display: block; }
+  h1 { font-size: 2.4rem; margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 1.15rem; max-width: 620px; margin: 0 auto 34px; }
+  .btn {
+    display: inline-block; padding: 16px 40px; border-radius: 12px;
+    background: var(--gold); color: #0c1220; font-weight: 700; font-size: 1.1rem;
+    text-decoration: none; transition: background .2s;
+  }
+  .btn:hover { background: var(--gold-dark); }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-top: 14px; }
+
+  section { padding: 50px 0; }
+  h2 { text-align: center; font-size: 1.7rem; margin: 0 0 30px; color: var(--gold); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+  .feature {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px;
+  }
+  .feature h3 { margin: 0 0 8px; font-size: 1.05rem; color: var(--text); }
+  .feature p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+  .steps { counter-reset: step; max-width: 680px; margin: 0 auto; padding: 0; list-style: none; }
+  .steps li {
+    counter-increment: step; background: var(--card); border: 1px solid var(--line);
+    border-radius: 12px; padding: 16px 18px 16px 62px; margin-bottom: 12px; position: relative;
+  }
+  .steps li::before {
+    content: counter(step); position: absolute; right: 18px; top: 16px;
+    width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: #0c1220;
+    font-weight: 700; display: flex; align-items: center; justify-content: center;
+  }
+  .steps li { padding-left: 18px; padding-right: 62px; }
+  .steps li::before { right: auto; left: 18px; }
+
+  .warn {
+    max-width: 680px; margin: 26px auto 0; background: #2a2416; border: 1px solid #5c4b22;
+    border-radius: 12px; padding: 16px 18px; color: #e7d9b5; font-size: 0.95rem;
+  }
+
+  footer { border-top: 1px solid var(--line); padding: 26px 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#d4b06a" d="M32 4a28 28 0 1 0 0 56c-3-.3-5.9-1-8.6-2.1A24 24 0 0 1 32 8c3.4 0 6.6.7 9.6 1.9A28 28 0 0 0 32 4z"/><path fill="#d4b06a" d="M47 14l1.8 4.6 4.6 1.8-4.6 1.8L47 27l-1.8-4.6-4.6-1.8 4.6-1.8z"/></svg>
+      مواقيت الصلاة
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="hero">
+    <svg class="hero-icon" viewBox="0 0 512 512" aria-hidden="true">
+      <rect width="512" height="512" rx="110" fill="#142822"/>
+      <rect x="24" y="24" width="464" height="464" rx="92" fill="none" stroke="#2fb39a" stroke-width="6"/>
+      <path fill="#d4b06a" d="M256 132a130 130 0 1 0 0 260 130 130 0 0 1-40-260 130 130 0 0 0 40 0z"/>
+      <polygon fill="#d4b06a" points="348,148 355,166 373,170 355,178 348,196 341,178 323,170 341,166"/>
+    </svg>
+    <h1>مواقيت الصلاة لويندوز</h1>
+    <p class="lead">تطبيق خفيف يعرض مواقيت الصلاة لأكثر من 40 مدينة حول العالم، مع عداد للأذان القادم وأذكار يومية. بدون إعلانات، ويحدد موقعك تلقائياً ليعرض مواقيت مدينتك.</p>
+    <a class="btn" href="https://www.dropbox.com/scl/fi/s6a04omqfmpu6y0xsakf9/1.0.2.exe?rlkey=tigdcuvdihli9pzhkfuey4l9c&st=rs6wpdv6&dl=1" download>تحميل التطبيق</a>
+    <div class="meta">ويندوز 10 و11 · نسخة 1.0.2 · حجم الملف حوالي 68 ميغابايت</div>
+  </div>
+
+  <section>
+    <h2>المميزات</h2>
+    <div class="grid">
+      <div class="feature"><h3>مواقيت دقيقة</h3><p>حساب فلكي بتقويم أم القرى، مع الفجر والشروق والظهر والعصر والمغرب والعشاء.</p></div>
+      <div class="feature"><h3>عداد للأذان</h3><p>يعرض الصلاة القادمة مع عداد تنازلي وشريط تقدم بين الأذانين.</p></div>
+      <div class="feature"><h3>نهاية وقت العشاء</h3><p>عداد لمنتصف الليل الشرعي، لمن يحرص على أداء العشاء في وقتها.</p></div>
+      <div class="feature"><h3>أذكار يومية</h3><p>أذكار الصباح والمساء وبعد الصلاة والنوم والوضوء والمسجد والسفر وغيرها.</p></div>
+      <div class="feature"><h3>مدن العالم</h3><p>اختر أي مدينة من القائمة وشوف مواقيتها بتوقيتها المحلي.</p></div>
+      <div class="feature"><h3>خفيف وبسيط</h3><p>ملف واحد محمول، يشتغل مباشرة بدون تثبيت أو حساب.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>طريقة التثبيت</h2>
+    <ol class="steps">
+      <li>اضغط زر "تحميل التطبيق" بالأعلى، وحفظ الملف على جهازك.</li>
+      <li>افتح الملف المحمل باسم "مواقيت الصلاة.exe"، ويشتغل مباشرة بدون تثبيت.</li>
+      <li>إذا ظهرت رسالة "Windows protected your PC"، اضغط "More info" ثم "Run anyway".</li>
+    </ol>
+    <div class="warn">
+      ويندوز يعرض هذي الرسالة لأن التطبيق غير موقّع رقمياً من شركة معتمدة. التطبيق آمن، والكود مفتوح لمن يبي يراجعه.
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">مواقيت الصلاة · تمنياتنا لكم بالقبول</div>
+</footer>
+
+</body>
+</html>
